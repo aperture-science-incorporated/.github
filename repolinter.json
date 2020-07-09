@@ -14,6 +14,13 @@
                     "files": ["LICENSE*", "COPYING*"], 
                     "nocase": true
                 }
+            },
+            "fix": {
+                "type": "file-create",
+                "options": {
+                    "file": "LICENSE",
+                    "text": { "url": "https://raw.githubusercontent.com/aperture-science-incorporated/.github/master/LICENSE" }
+                }
             }
         },
         "readme-file-exists": {
