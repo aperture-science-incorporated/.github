@@ -52,7 +52,7 @@
             "fix": {
                 "type": "file-create",
                 "options": {
-                    "files": "CODE_OF_CONDUCT.md",
+                    "file": "CODE_OF_CONDUCT.md",
                     "text": { "url": "https://raw.githubusercontent.com/aperture-science-incorporated/.github/master/CODE_OF_CONDUCT.md" }
                 }
             }
@@ -164,13 +164,6 @@
                     "lineCount": 5,
                     "patterns": ["Copyright", "License"],
                     "flags": "i"
-                }
-            },
-            "fix": {
-                "type": "file-modify",
-                "options": {
-                    "text": { "file": "./header.js" },
-                    "write_mode": "prepend"
                 }
             }
         },
