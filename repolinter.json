@@ -57,7 +57,16 @@
                     "globsAny": ["LICENSE*", "COPYING*"],
                     "nocase": true
                 }
-            }
+            },
+            "fix": {
+                "type": "file-create",
+                "options": {
+                    "file": "LICENSE",
+                    "text": { "url": "https://raw.githubusercontent.com/aperture-science-incorporated/.github/master/LICENCE" }
+                }
+            },
+            "policyInfo": "New Relic recommends lorem ipsum dolorem si amet.",
+            "policyUrl": "www.example.com/morepolicyinfo"
         },
         "readme-file-exists": {
             "level": "error",
