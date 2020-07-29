@@ -44,10 +44,10 @@
                     "human-readable-pattern": "Open source category header (see https://opensource.newrelic.com/oss-category)",
                     "flags": "i", 
                     "succeed-on-non-existent": false
-                },
-                "policyInfo": "Here is some policy information about the community header",
-                "policyUrl": "www.example.com/morepolicyinfo"
-            }
+                }
+            },
+            "policyInfo": "Here is some policy information about the community header",
+            "policyUrl": "www.example.com/morepolicyinfo"
         },
         "license-file-exists": {
             "level": "error",
