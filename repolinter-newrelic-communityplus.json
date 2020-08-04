@@ -21,7 +21,7 @@
                 }
             },
             "policyInfo": "New Relic requires that all open source projects have an associated license contained within the project. This license must be permissive (e.g. non-viral or copyleft), and we recommend Apache 2.0 for most use cases",
-            "policyUrl": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+            "policyUrl": "https://docs.google.com/document/d/1vML4aY_czsY0URu2yiP3xLAKYufNrKsc7o4kjuegpDw/edit"
         },
         "readme-file-exists": {
             "level": "error",
@@ -94,7 +94,7 @@
                     "human-readable-content": "a link to the appropriate discuss.newrelic.com topic"
                 }
             },
-            "policyInfo": "New Relic recommends directly linking the your appropriate discuss.newrelic.com topic in the README, allowing developer an alternate method of getting support.",
+            "policyInfo": "New Relic recommends directly linking the your appropriate discuss.newrelic.com topic in the README, allowing developer an alternate method of getting support",
             "policyUrl": "https://nerdlife.datanerd.us/new-relic/security-guidelines-for-publishing-source-code"
         },
         "third-party-notices-file-exists": {
