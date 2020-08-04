@@ -50,7 +50,7 @@
                     "globsAll": ["README*"],
                     "nocase": true,
                     "lineCount": 1, 
-                    "patterns": ["\\[\\s*\\!\\[[a-z0-9\\s]+\\]\\(\\s*[\\/\\.a-z0-9\\-\\_\\~:]+\\s*\\)\\s*]\\(\\s*https:\\/\\/opensource\\.newrelic\\.com\\/oss-category\\/#([\\/\\.a-z0-9\\-\\_\\~]+)\\s*\\)"],
+                    "patterns": ["\\[\\s*\\!\\[[a-z0-9\\s]+\\]\\(\\s*https:\\/\\/github\\.com\\/newrelic\\/opensource-website\\/raw\\/master\\/src\\/images\\/categories\\/Community_Plus\\.png\\s*\\)\\s*\\]\\(\\s*https:\\/\\/opensource\\.newrelic\\.com\\/oss-category\\/#community-plus\\s*\\)"],
                     "human-readable-pattern": "Open source Community Plus header (see https://opensource.newrelic.com/oss-category)",
                     "flags": "i", 
                     "succeed-on-non-existent": false
