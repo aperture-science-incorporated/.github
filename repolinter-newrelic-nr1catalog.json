@@ -173,7 +173,7 @@
                     }
                 }
             },
-            "policyInfo": "NPM scripts for ESLint (`eslint` and `eslint-fix`) are required to properly integrate with the nerdpack system."
+            "policyInfo": "NPM scripts for ESLint (`eslint` and `eslint-fix`) are required to properly integrate with the nerdpack system"
         }
     }
 }
