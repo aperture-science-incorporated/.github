@@ -161,7 +161,7 @@
                 "type": "json-schema-passes",
                 "options": {
                     "glob": "package.json",
-                    "human-readable-message": "an `eslint` and `eslint-fix` npm script",
+                    "human-readable-message": "An `eslint` and `eslint-fix` npm script",
                     "schema": {
                         "properties": {
                             "scripts": {
@@ -172,7 +172,8 @@
                         "required": ["scripts"]
                     }
                 }
-            }
+            },
+            "policyInfo": "NPM scripts for ESLint (`eslint` and `eslint-fix`) are required to properly integrate with the nerdpack system."
         }
     }
 }
