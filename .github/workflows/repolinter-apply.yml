@@ -27,7 +27,7 @@ jobs:
           token: ${{ secrets.PERSONAL_TOKEN }}
       
       - name: Run Repolinter
-        uses: newrelic/repolinter-action@v1
+        uses: newrelic/repolinter-action@develop
         with:
           config_url: ${{ matrix.config }}
           output_type: issue
