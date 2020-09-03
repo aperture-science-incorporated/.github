@@ -24,7 +24,7 @@ jobs:
         uses: actions/checkout@v2
         with:
           repository: ${{ matrix.repo }}
-          token: ${{ secrets.REPOLINTER_TOKEN }}
+          token: ${{ secrets.PERSONAL_TOKEN }}
       
       - name: Run Repolinter
         uses: newrelic/repolinter-action@v1
@@ -33,5 +33,6 @@ jobs:
           output_type: issue
           username: prototypicalpro
           repository: ${{ matrix.repo }}
+          token: ${{ secrets.PERSONAL_TOKEN }}
 
 
