@@ -33,6 +33,6 @@ jobs:
           output_type: issue
           username: prototypicalpro
           repository: ${{ matrix.repo }}
-          token: ${{ secrets.PERSONAL_TOKEN }}
+          # token: ${{ secrets.PERSONAL_TOKEN }}
 
 
