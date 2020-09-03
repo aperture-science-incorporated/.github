@@ -1,0 +1,37 @@
+name: Apply Repolinter
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  apply-repolinter:
+    name: Apply Repolinter (${{ matrix.repo }})
+    strategy:
+      fail-fast: true
+      matrix:
+        include:
+          - repo: aperture-science-incorporated/companion-cube
+            config: https://raw.githubusercontent.com/newrelic/.github/main/repolinter-rulesets/community-plus.yml
+          - repo: aperture-science-incorporated/neurotoxin-codes
+            config: https://raw.githubusercontent.com/newrelic/.github/main/repolinter-rulesets/new-relic-one-catalog-project.json
+          - repo: aperture-science-incorporated/turret-schematics
+            config: https://raw.githubusercontent.com/newrelic/.github/main/repolinter-rulesets/community-plus.yml
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v2
+        with:
+          repository: ${{ matrix.repo }}
+          token: ${{ secrets.REPOLINTER_TOKEN }}
+      
+      - name: Run Repolinter
+        uses: newrelic/repolinter-action@v1
+        with:
+          config_url: ${{ matrix.config }}
+          output_type: issue
+          username: prototypicalpro
+          repository: ${{ matrix.repo }}
+
+
