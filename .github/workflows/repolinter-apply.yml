@@ -13,11 +13,11 @@ jobs:
       matrix:
         include:
           - repo: aperture-science-incorporated/companion-cube
-            config: community-plus.yml
+            config: repolinter-newrelic-communityplus.json
           - repo: aperture-science-incorporated/neurotoxin-codes
             config: new-relic-one-catalog-project.json
           - repo: aperture-science-incorporated/turret-schematics
-            config: community-plus.yml
+            config: repolinter-newrelic-communityplus.json
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Self
