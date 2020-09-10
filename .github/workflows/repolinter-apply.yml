@@ -15,7 +15,7 @@ jobs:
           - repo: aperture-science-incorporated/companion-cube
             config: repolinter-newrelic-communityplus.json
           - repo: aperture-science-incorporated/neurotoxin-codes
-            config: new-relic-one-catalog-project.json
+            config: repolinter-newrelic-nr1catalog.json
           - repo: aperture-science-incorporated/turret-schematics
             config: repolinter-newrelic-communityplus.json
     runs-on: ubuntu-latest
