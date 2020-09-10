@@ -13,23 +13,30 @@ jobs:
       matrix:
         include:
           - repo: aperture-science-incorporated/companion-cube
-            config: https://raw.githubusercontent.com/newrelic/.github/main/repolinter-rulesets/community-plus.yml
+            config: community-plus.yml
           - repo: aperture-science-incorporated/neurotoxin-codes
-            config: https://raw.githubusercontent.com/newrelic/.github/main/repolinter-rulesets/new-relic-one-catalog-project.json
+            config: new-relic-one-catalog-project.json
           - repo: aperture-science-incorporated/turret-schematics
-            config: https://raw.githubusercontent.com/newrelic/.github/main/repolinter-rulesets/community-plus.yml
+            config: community-plus.yml
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repo
+      - name: Checkout Self
         uses: actions/checkout@v2
         with:
+          path: ./repo
+
+      - name: Checkout ${{ matrix.repo }}
+        uses: actions/checkout@v2
+        with:
+          path: ./apply
           repository: ${{ matrix.repo }}
           token: ${{ secrets.PERSONAL_TOKEN }}
       
       - name: Run Repolinter
-        uses: newrelic/repolinter-action@develop
+        uses: newrelic/repolinter-action@feat/custom-working-dir
         with:
-          config_url: ${{ matrix.config }}
+          directory: ${{ github.workspace }}/apply
+          config_file: ${{ github.workspace }}/repo/${{ matrix.config }}
           output_type: issue
           username: prototypicalpro
           repository: ${{ matrix.repo }}
